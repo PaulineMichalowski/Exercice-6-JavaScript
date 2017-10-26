@@ -1,5 +1,11 @@
-function form3() {
-  var premier_nombre = document.getElementById('premier_nombre').value;
-  var deuxieme_nombre = document.getElementById('deuxieme_nombre').value;
-  alert(Math.floor(premier_nombre) % deuxieme_nombre);
+function afficher(){
+  var nbr1 = document.getElementById('premier_nombre').value;
+  var nbr2 = document.getElementById('deuxieme_nombre').value;
+  if (isNaN(nbr1) ==false && isNaN(nbr2) ==false && nbr2 != 0) {
+    var result = (nbr1) % (nbr2);
+    alert('Le résultat est : ' + result);
+  }
+  else {
+    alert('Veuillez saisir un nombre');
+  }
 }
